@@ -1,0 +1,8 @@
+.container{
+    background-color: rgb(13, 10, 22);
+    width: 40vw;
+    height: 70vh;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 5px;
+}
