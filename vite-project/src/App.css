@@ -3,9 +3,10 @@
   min-width: 100vw;
   margin: 0 auto;
   padding: 0;
-  background-image: url(./assets/react-logo.png);
+  background-image: url(./assets/react-back.png);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
+  background-size: contain;
  
 }
 .itemWrapper{
