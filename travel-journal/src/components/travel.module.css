@@ -1,0 +1,51 @@
+.itemContainer{
+    display: flex;
+    flex-direction: row;
+    align-self:flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+    margin:20px;
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.image{
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.imageWrapper{
+    align-self: center;
+     align-items: flex-start;
+     float: left;
+     display: flex;
+     
+}
+.location{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    padding-bottom: -10px;
+}
+.title{
+    align-items: flex-start;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 15px;
+    align-content: flex-start;
+    display: flex;
+}
+.date{
+    padding-left: 15px;
+    align-items: flex-start;
+    display: flex;
+}
+.textBox{
+    padding-left: 15px;
+    align-items: flex-start;
+    display: flex;
+    text-align: left;
+}

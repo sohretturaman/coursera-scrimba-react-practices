@@ -1,0 +1,14 @@
+nav{
+    background-color: #F55A5A;
+    display: flex;
+    height: 50px;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    color: white;
+    margin-left: 5px;
+   
+}
