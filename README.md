@@ -9,4 +9,5 @@ https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/8138257
 ![travel2](https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/51261ac1-b99a-4260-9254-5654f7f0e8b7)
 ### 5-Memes Generator
 https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/e5f2e1c3-703a-43e8-a4e0-4fb43f2be692
-
+### Dark Theme 
+![lightMode](https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/32e98773-52a8-4499-b28a-5b98d5912763)
