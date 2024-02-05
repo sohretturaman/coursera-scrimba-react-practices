@@ -94,16 +94,20 @@ position: absolute;
 .bottomImage{
     display:flex; 
     height: 400px;
-    width: 400px;
+    width: 500px;
 }
 .topText{
     display: inline;
     color: white;
     top:0px;
-    width: 300px;
+    width: 400px;
     left: 0px;
     right: 0px;
-  font-weight: bold;
+    font-weight: bold;
+    font-size: 45px;
+    color: white; /* Text color */
+    -webkit-text-stroke: 2px black; /* Border around the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
     
 }
 
@@ -116,16 +120,23 @@ position: absolute;
     align-items: center;
     align-content: center;
     justify-content: center;
- 
+    font-weight: bold;
+    font-size: 45px;
+    color: white; /* Text color */
+   -webkit-text-stroke: 2px black; /* Border around the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect */
 
 }
 .textOverlay{
     position:absolute;
     display: flex ;
     justify-content: space-between;
-    height: '500px';
+
    flex-direction: column;
    align-content: center;
    align-items: center;
+   
+   height: 100%;
+
     
 }
