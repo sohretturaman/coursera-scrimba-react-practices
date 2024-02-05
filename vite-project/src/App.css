@@ -34,6 +34,8 @@ ul>li {
 .reactLogo{
   align-items: center;
   margin-right: 10px;
+  margin-left: 10px;
+
 }
 .ulWrapper{
   flex-direction: column;
