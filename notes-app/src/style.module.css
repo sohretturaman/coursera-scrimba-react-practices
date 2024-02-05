@@ -34,7 +34,7 @@ button:focus {
 
 .sidebarHeader {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -50,6 +50,7 @@ button:focus {
     border-radius: 3px;
     height: 30px;
     width: 30px;
+    margin-right: 2px;
 }
 
 .firstNote {
@@ -137,4 +138,8 @@ button:focus {
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
+}
+
+.deleteIcon{
+    margin-right: 10px;
 }
