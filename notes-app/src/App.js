@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import Sidebar from "./components/Sidebar"
 import Editor from "./components/Editor"
 import { data } from "./data"
@@ -21,6 +21,10 @@ export default function App() {
         (notes[0] && notes[0].id) || ""
     )
 
+
+    const [state,setState] =useState(()=> console.log('stae intialization')
+    
+    )
     useEffect(()=>{
          localStorage.setItem('notes',JSON.stringify(notes));
     },[notes])
