@@ -6,6 +6,9 @@ import { FaTrashAlt } from "react-icons/fa";
 export default function Sidebar(props) {
 // console.log('note in curret', props.currentNote);
 
+
+
+
   const noteElements = props.notes.map((note, index) => (
     <div key={note.id}>
       <div

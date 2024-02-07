@@ -31,15 +31,10 @@ export default function App() {
           id: doc.id
       }))
       setNotes(notesArr)
-      console.log('created at info ', notesArr[4].createdAt);
       
   })
   return unsubscribe
-    
-
-        
-   
-     
+  
     
   }, []);
 
@@ -60,6 +55,7 @@ export default function App() {
    const updatableDoc = doc(db, 'notes', currentNoteId);  // take db object give collection naem and current it 
    updateDoc(updatableDoc,{body:text,updatedAt:Date.now()},{merge:true})
 
+
      
   }
 
@@ -71,10 +67,15 @@ export default function App() {
     );
   }
 
+
   async function deleteNote(noteId) {
     const docRef = doc(db, "notes", noteId)
     await deleteDoc(docRef)
 }
+
+
+const  SortedNotes =notes.sort((a, b) => b.updatedAt - a.updatedAt)
+
 
   return (
     <main>
@@ -85,7 +86,7 @@ export default function App() {
           className={styles.split}
         >
           <Sidebar
-            notes={notes}
+            notes={SortedNotes}
             currentNote={findCurrentNote()}
             setCurrentNoteId={setCurrentNoteId}
             newNote={createNewNote}
