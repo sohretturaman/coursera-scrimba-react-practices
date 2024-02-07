@@ -4,6 +4,8 @@ import React from "react";
 import styles from "../style.module.css";
 import { FaTrashAlt } from "react-icons/fa";
 export default function Sidebar(props) {
+// console.log('note in curret', props.currentNote);
+
   const noteElements = props.notes.map((note, index) => (
     <div key={note.id}>
       <div
@@ -12,10 +14,10 @@ export default function Sidebar(props) {
         }`}
         onClick={() => props.setCurrentNoteId(note.id)}
       >
-        <h4 className={styles.textSnippet}>{note.body.split("\n")[0]}</h4>
+        <h4 className={styles.textSnippet}>{note.body?.split("\n")[0]}</h4>
         {note.id === props.currentNote.id  && (
           <FaTrashAlt
-            onClick={(event)=> props.handleDelete(event,note.id)}
+            onClick={()=> props.handleDelete(note.id)}
             color="white"
             className={styles.deleteIcon}
           />

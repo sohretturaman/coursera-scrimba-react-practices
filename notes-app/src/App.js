@@ -3,11 +3,10 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Editor from "./components/Editor";
-import { data } from "./data";
 import Split from "react-split";
-import { nanoid } from "nanoid";
-
 import styles from "./style.module.css";
+import { notesCollection,db } from "./Firebase"; 
+import  {addDoc,  onSnapshot,deleteDoc,doc, updateDoc} from 'firebase/firestore'
 /**
  * Challenge: Spend 10-20+ minutes reading through the code
  * and trying to understand how it's currently working. Spend
@@ -17,46 +16,51 @@ import styles from "./style.module.css";
  */
 
 export default function App() {
-  let currentvals = () => JSON.parse(localStorage.getItem("notes"));
-  const [notes, setNotes] = React.useState(currentvals || []);
-  const [currentNoteId, setCurrentNoteId] = React.useState(
-    (notes[0] && notes[0].id) || ""
+  // let currentvals = () => JSON.parse(localStorage.getItem("notes"));
+  const [notes, setNotes] = useState( []);
+  const [currentNoteId, setCurrentNoteId] = useState(
+    (notes[0] && notes[0]?.id) || ""
   );
 
   useEffect(() => {
-    localStorage.setItem("notes", JSON.stringify(notes));
-  }, [notes]);
+   
+    const unsubscribe = onSnapshot(notesCollection, function(snapshot) {
+      // Sync up our local notes array with the snapshot data
+      const notesArr = snapshot.docs.map(doc => ({
+          ...doc.data(),
+          id: doc.id
+      }))
+      setNotes(notesArr)
+      console.log('created at info ', notesArr[4].createdAt);
+      
+  })
+  return unsubscribe
+    
 
-  function createNewNote() {
+        
+   
+     
+    
+  }, []);
+
+   async function createNewNote() {
     const newNote = {
-      id: nanoid(),
+     // id: nanoid(),
       body: "# Type your markdown note's title here",
+      createdAt: Date.now(),
+      updatedAt : Date.now()
     };
-    setNotes((prevNotes) => [newNote, ...prevNotes]);
-    setCurrentNoteId(newNote.id);
+  
+     const newNoteRef =  await  addDoc(notesCollection,newNote);
+     
+    setCurrentNoteId(newNoteRef?.id); // update current note id with setCurrentNote state  we need ti to make  arrangement
   }
 
   function updateNote(text) {
-  /*   setNotes((oldNotes) =>
-      oldNotes.map((oldNote) => {
-        return oldNote.id === currentNoteId
-          ? { ...oldNote, body: text }
-          : oldNote;
-      })
-    ); */
+   const updatableDoc = doc(db, 'notes', currentNoteId);  // take db object give collection naem and current it 
+   updateDoc(updatableDoc,{body:text,updatedAt:Date.now()},{merge:true})
 
-    setNotes(oldNotes => {
-        const newArray = []
-        for(let i = 0; i < oldNotes.length; i++) {
-            const oldNote = oldNotes[i]
-            if(oldNote.id === currentNoteId) {
-                newArray.unshift({ ...oldNote, body: text })
-            } else {
-                newArray.push(oldNote)
-            }
-        }
-        return newArray
-    })
+     
   }
 
   function findCurrentNote() {
@@ -67,11 +71,11 @@ export default function App() {
     );
   }
 
-  function deleteNote(event, noteId) {
-    event.stopPropagation();
-    const newArray = notes.filter((note) => note.id !== noteId);
-    setNotes(newArray);
-  }
+  async function deleteNote(noteId) {
+    const docRef = doc(db, "notes", noteId)
+    await deleteDoc(docRef)
+}
+
   return (
     <main>
       {notes.length > 0 ? (
