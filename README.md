@@ -13,4 +13,4 @@ https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/8138257
 ![lightMode](https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/32e98773-52a8-4499-b28a-5b98d5912763)
 ### Tenzies app - deice app
 https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/73122da7-5734-40e3-bda9-950b9e3d07a9
-
+![tenziesImage](https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/354f20ce-a335-468f-888e-4f4c6cdbb98c)
