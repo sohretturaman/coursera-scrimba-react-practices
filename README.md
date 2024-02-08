@@ -10,9 +10,13 @@ https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/8138257
 ### 5-Memes Generator
 https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/e5f2e1c3-703a-43e8-a4e0-4fb43f2be692
 ### Dark Theme 
-![lightMode](https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/32e98773-52a8-4499-b28a-5b98d5912763)
+![lightMode]
+
+https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/2f9da12e-0e46-427f-98bc-8efdf658ab96
+
+(https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/32e98773-52a8-4499-b28a-5b98d5912763)
+### Notes App
+
 ### Tenzies app - deice app
-
 https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/73122da7-5734-40e3-bda9-950b9e3d07a9
-
 ![tenziesImage](https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/e21d6905-23aa-4531-9fe9-0d2dec6175ce)
