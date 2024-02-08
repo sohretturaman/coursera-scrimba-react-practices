@@ -11,3 +11,6 @@ https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/8138257
 https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/e5f2e1c3-703a-43e8-a4e0-4fb43f2be692
 ### Dark Theme 
 ![lightMode](https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/32e98773-52a8-4499-b28a-5b98d5912763)
+### Tenzies app - deice app
+https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/73122da7-5734-40e3-bda9-950b9e3d07a9
+
