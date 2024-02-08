@@ -1,0 +1,35 @@
+/* 
+@keyframes  slideLeft {
+    from {
+       transform: translateX(-300px);
+    }
+    to {
+transform:  translateX(0);
+    }
+}
+
+.heading{
+    animation-name: slideLeft ;
+    animation-duration:0s ;
+    animation-timing-function: ease-in ;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:normal ;
+    animation-fill-mode:forwards ;
+} */
+
+.heading{
+
+    padding: 2px
+}
+.heading:hover {
+    transform: rotateY(360deg); /*3D*/
+    transition-duration: 2s;
+    transition-delay: 0s;
+ 
+  }
+
+/* .transition:hover{
+ transform: translateY(-10px)
+
+} */
