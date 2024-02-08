@@ -16,12 +16,16 @@ https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/8138257
 
 
 
-https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/49a33934-38e3-42d2-9bc3-3f22b19cc817
+
+
+
+https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/d2ece072-34e3-46f1-85f7-5023602f3c01
+
+
+
 
 
 ### Tenzies app - deice app
 ![tenziesImage](https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/e21d6905-23aa-4531-9fe9-0d2dec6175ce)
 
-
-https://github.com/sohretturaman/coursera-scrimba-react-practices/assets/81382575/d55497df-00b9-444e-b18e-bedc2bee1ffd
 
