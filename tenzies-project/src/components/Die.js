@@ -1,11 +1,15 @@
 import React from 'react'
+import Dots from './Dots';
 
-const Die = ({value}) => {
+const Die = (props) => {
+  console.log();
+  
     
-    const styles = {backgroundColor:'#59E391'}
+    const styles = {backgroundColor:props.isheld ? '#59E391' : 'white'}
   return (
-    <div className='dieWrapper' style={styles}>
-        <h1>{value}</h1>
+    <div className='dieWrapper' style={styles} onClick={()=>props.holdDice(props.id)} >
+       {/*  <h1>{props.value}</h1> */}
+        <Dots number={props.value} />
     </div>
   )
 }
